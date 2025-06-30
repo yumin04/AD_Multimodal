@@ -1,0 +1,30 @@
+name: tfn_ad_gpu_env
+channels:
+  - defaults
+  - conda-forge
+  - pytorch
+  - nvidia
+dependencies:
+  - python=3.8
+  - numpy=1.24
+  - pandas
+  - matplotlib
+  - scikit-learn
+  - seaborn
+  - tensorflow=2.8
+  - keras=2.8
+  - pytorch=2.0
+  - torchvision
+  - torchaudio
+  - pytorch-cuda=11.8
+  - h5py
+  - nibabel
+  - scikit-image
+  - tqdm
+  - pillow
+  - ipykernel
+  - jupyterlab
+  - pip
+  - pip:
+      - einops
+      - opencv-python
