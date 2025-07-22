@@ -1,30 +1,35 @@
-name: tfn_ad_gpu_env
+name: tf_gpu_env
 channels:
-  - defaults
   - conda-forge
   - pytorch
   - nvidia
+  - defaults
 dependencies:
-  - python=3.8
-  - numpy=1.24
+  - python=3.9
+  - pip
+  - jupyter
+  - jupyterlab
+  - ipykernel
+  - numpy
   - pandas
   - matplotlib
-  - scikit-learn
   - seaborn
-  - tensorflow=2.8
-  - keras=2.8
-  - pytorch=2.0
-  - torchvision
-  - torchaudio
-  - pytorch-cuda=11.8
-  - h5py
-  - nibabel
+  - scikit-learn
   - scikit-image
+  - statsmodels
   - tqdm
   - pillow
-  - ipykernel
-  - jupyterlab
-  - pip
+  - nibabel
+  - pytorch
+  - torchvision
+  - torchaudio
+  - cudatoolkit=11.8
+  - tensorly
   - pip:
-      - einops
-      - opencv-python
+      - tensorflow==2.18.0
+      - keras==3.6.0
+      - tensorflow-hub==0.16.1
+      - transformers==4.41.2
+      - scikit-survival==0.23.0
+      - pycox==0.2.3
+      - torchtuples
